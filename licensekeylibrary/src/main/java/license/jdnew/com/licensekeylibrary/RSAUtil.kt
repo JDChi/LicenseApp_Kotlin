@@ -154,7 +154,7 @@ class RSAUtil {
      * @param privateKeyByte 私钥
      * @return 已签名的数据
      */
-    fun signWithPrivateKey(data: ByteArray , privateKeyByte: ByteArray) : ByteArray{
+    fun signWithPrivateKey(data: ByteArray , privateKeyByte: ByteArray?) : ByteArray{
 
         var result : ByteArray
         var pkcs8EncodedKeySpec = PKCS8EncodedKeySpec(privateKeyByte)
