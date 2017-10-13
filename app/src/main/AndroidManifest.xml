@@ -10,13 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity.RegistActivity">
+
+        </activity>
+        <activity android:name=".activity.RegistSuccessActivity"/>
+        <activity android:name=".activity.RegistActivity1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
+
         </activity>
-        <activity android:name=".activity.RegistSuccessActivity"/>
     </application>
 
 </manifest>
