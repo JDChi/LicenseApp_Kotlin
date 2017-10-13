@@ -1,10 +1,9 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
-
+    buildToolsVersion '26.0.1'
 
     defaultConfig {
         applicationId "license.jdnew.com.serverapp"
@@ -33,4 +32,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile project(':licensekeylibrary')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }

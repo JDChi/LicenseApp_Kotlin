@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <service android:name=".LicenseService">
+
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="license.jdnew.com.serverapp.LicenseService"/>
+
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
