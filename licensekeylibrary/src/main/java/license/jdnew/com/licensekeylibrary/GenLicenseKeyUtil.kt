@@ -45,7 +45,7 @@ class GenLicenseKeyUtil(val mContext: Context) {
      *
      * @return
      */
-    fun getSubmitData(licenseKey: String, RSAPublicKey: ByteArray): String {
+    fun getSubmitData(licenseKey: String, RSAPublicKey: ByteArray?): String {
 
         //获取要提交的客户端数据
         var clientData = genClientData(licenseKey);

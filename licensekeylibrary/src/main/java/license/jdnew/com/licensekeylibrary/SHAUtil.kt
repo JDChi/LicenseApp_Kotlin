@@ -18,7 +18,7 @@ class SHAUtil{
     }
 
 
-    fun encodeSHA1(data: ByteArray) : ByteArray{
+    fun encodeSHA1(data: ByteArray?) : ByteArray{
         var dataByte : ByteArray
         var newDataByte : ByteArray
 

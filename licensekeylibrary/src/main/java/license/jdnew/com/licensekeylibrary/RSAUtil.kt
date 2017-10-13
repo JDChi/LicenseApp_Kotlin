@@ -64,7 +64,7 @@ class RSAUtil {
      * @param publicKeyByte 二进制的公钥
      * @return 公钥加密后的数据
      */
-    fun encryptWithPublicKey(data: ByteArray, publicKeyByte: ByteArray): ByteArray {
+    fun encryptWithPublicKey(data: ByteArray, publicKeyByte: ByteArray?): ByteArray {
 
         var dataBytes: ByteArray
 
@@ -109,7 +109,7 @@ class RSAUtil {
      * @param privateKeyByte 二进制私钥
      * @return 解密后的数据
      */
-    fun decryptWithPrivateKey(data: ByteArray, privateKeyByte: ByteArray): ByteArray {
+    fun decryptWithPrivateKey(data: ByteArray, privateKeyByte: ByteArray?): ByteArray {
         var dataBytes: ByteArray
 
         var pkcs8EncodedKeySpec = PKCS8EncodedKeySpec(privateKeyByte)
